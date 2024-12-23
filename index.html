@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>Demo for Multimodal TTS</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+   </head>
+   <style>
+        table {
+            border-collapse: collapse; 
+        }
+        td {
+            border-bottom: 1px solid black;
+            padding: 5px;
+        }
+    </style>
+   <body>
+    <div class="container-fluid">
+        <div class="row" style="height: 200px;" >
+            <div class="col-xs-12" 
+                style="background-color: #074C88; height: 200px;">
+                <div class="text-center" style="line-height: 200px; color: white; font-size: 40px;">Demo for Multimodal TTS</div>
+            </div>
+        </div>
+        <div class="row" style="height: 50px;" >
+            <div class="col-xs-12" 
+                style="background-color: #0A68BE; height: 50px;">
+            </div>
+        </div>
+        <div class="row" style="height: 100px;" >
+            <div class="col-xs-12" style=" height: 50px; font-size: 30px;">
+                Samples for face based
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12" style="display: flex; justify-content: center;">
+            <table class="table-responsive" style="font-size: 20px;">
+                <thead></thead>
+                <tbody>
+                    <tr>
+                        <td colspan="1">
+                            <img class="img-responsive" src="./src/face/0/ref.jpg" style="max-width: 150px;">
+                        </td>
+                        <td colspan="2" style="font-size: 16px; max-width: 500px;">
+                            THANK YOU VERY MUCH
+                        </td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td style="border-bottom: 0px;">Ground Truth</td>
+                        <td style="border-bottom: 0px;">Speech Based</td>
+                        <td style="border-bottom: 0px;">FaceTTS</td>
+                        <td style="border-bottom: 0px;">Synthesees</td>
+                        <td style="border-bottom: 0px;">Ours</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <audio controls style="max-width: 250px;"><source src="./src/face/0/gt.wav" type="audio/wav"></audio>
+                        </td>
+                        <td>
+                            <audio controls style="max-width: 250px;"><source src="./src/face/0/speech_based.wav" type="audio/wav"></audio>
+                        </td>
+                        <td>
+                            <audio controls style="max-width: 250px;"><source src="./src/face/0/facetts.wav" type="audio/wav"></audio>
+                        </td>
+                        <td>
+                            <audio controls style="max-width: 250px;"><source src="./src/face/0/synthesees.wav" type="audio/wav"></audio>
+                        </td>
+                        <td>
+                            <audio controls style="max-width: 250px;"><source src="./src/face/0/ours.wav" type="audio/wav"></audio>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="1">
+                            <img class="img-responsive" src="./src/face/2/ref.jpg" style="max-width: 150px;">
+                        </td>
+                        <td colspan="2" style="font-size: 16px; max-width: 500px;">
+                            I DO BELIEVE WE CAN FIX WHAT'S BROKEN
+                        </td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td style="border-bottom: 0px;">Ground Truth</td>
+                        <td style="border-bottom: 0px;">Speech Based</td>
+                        <td style="border-bottom: 0px;">FaceTTS</td>
+                        <td style="border-bottom: 0px;">Synthesees</td>
+                        <td style="border-bottom: 0px;">Ours</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <audio controls style="max-width: 250px;"><source src="./src/face/2/gt.wav" type="audio/wav"></audio>
+                        </td>
+                        <td>
+                            <audio controls style="max-width: 250px;"><source src="./src/face/2/speech_based.wav" type="audio/wav"></audio>
+                        </td>
+                        <td>
+                            <audio controls style="max-width: 250px;"><source src="./src/face/2/facetts.wav" type="audio/wav"></audio>
+                        </td>
+                        <td>
+                            <audio controls style="max-width: 250px;"><source src="./src/face/2/synthesees.wav" type="audio/wav"></audio>
+                        </td>
+                        <td>
+                            <audio controls style="max-width: 250px;"><source src="./src/face/2/ours.wav" type="audio/wav"></audio>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="1">
+                            <img class="img-responsive" src="./src/face/4/ref.jpg" style="max-width: 150px;">
+                        </td>
+                        <td colspan="2" style="font-size: 16px; max-width: 500px;">
+                            IT'S ABOUT PROVING WHO YOU ARE AND WHAT YOU CAN DO
+                        </td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td style="border-bottom: 0px;">Ground Truth</td>
+                        <td style="border-bottom: 0px;">Speech Based</td>
+                        <td style="border-bottom: 0px;">FaceTTS</td>
+                        <td style="border-bottom: 0px;">Synthesees</td>
+                        <td style="border-bottom: 0px;">Ours</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <audio controls style="max-width: 250px;"><source src="./src/face/4/gt.wav" type="audio/wav"></audio>
+                        </td>
+                        <td>
+                            <audio controls style="max-width: 250px;"><source src="./src/face/4/speech_based.wav" type="audio/wav"></audio>
+                        </td>
+                        <td>
+                            <audio controls style="max-width: 250px;"><source src="./src/face/4/facetts.wav" type="audio/wav"></audio>
+                        </td>
+                        <td>
+                            <audio controls style="max-width: 250px;"><source src="./src/face/4/synthesees.wav" type="audio/wav"></audio>
+                        </td>
+                        <td>
+                            <audio controls style="max-width: 250px;"><source src="./src/face/4/ours.wav" type="audio/wav"></audio>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="1">
+                            <img class="img-responsive" src="./src/face/10/ref.jpg" style="max-width: 150px;">
+                        </td>
+                        <td colspan="2" style="font-size: 16px; max-width: 500px;">
+                            AND SOMEONE WHO HAS THAT KIND OF ARTISTIC POTENTIAL DESERVES SO MUCH MORE
+                        </td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td style="border-bottom: 0px;">Ground Truth</td>
+                        <td style="border-bottom: 0px;">Speech Based</td>
+                        <td style="border-bottom: 0px;">FaceTTS</td>
+                        <td style="border-bottom: 0px;">Synthesees</td>
+                        <td style="border-bottom: 0px;">Ours</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <audio controls style="max-width: 250px;"><source src="./src/face/10/gt.wav" type="audio/wav"></audio>
+                        </td>
+                        <td>
+                            <audio controls style="max-width: 250px;"><source src="./src/face/10/speech_based.wav" type="audio/wav"></audio>
+                        </td>
+                        <td>
+                            <audio controls style="max-width: 250px;"><source src="./src/face/10/facetts.wav" type="audio/wav"></audio>
+                        </td>
+                        <td>
+                            <audio controls style="max-width: 250px;"><source src="./src/face/10/synthesees.wav" type="audio/wav"></audio>
+                        </td>
+                        <td>
+                            <audio controls style="max-width: 250px;"><source src="./src/face/10/ours.wav" type="audio/wav"></audio>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="1">
+                            <img class="img-responsive" src="./src/face/13/ref.jpg" style="max-width: 150px;">
+                        </td>
+                        <td colspan="2" style="font-size: 16px; max-width: 500px;">
+                            I REALIZE OF COURSE THAT ALL COUNTRIES ARE UNIQUE
+                        </td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td style="border-bottom: 0px;">Ground Truth</td>
+                        <td style="border-bottom: 0px;">Speech Based</td>
+                        <td style="border-bottom: 0px;">FaceTTS</td>
+                        <td style="border-bottom: 0px;">Synthesees</td>
+                        <td style="border-bottom: 0px;">Ours</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <audio controls style="max-width: 250px;"><source src="./src/face/13/gt.wav" type="audio/wav"></audio>
+                        </td>
+                        <td>
+                            <audio controls style="max-width: 250px;"><source src="./src/face/13/speech_based.wav" type="audio/wav"></audio>
+                        </td>
+                        <td>
+                            <audio controls style="max-width: 250px;"><source src="./src/face/13/facetts.wav" type="audio/wav"></audio>
+                        </td>
+                        <td>
+                            <audio controls style="max-width: 250px;"><source src="./src/face/13/synthesees.wav" type="audio/wav"></audio>
+                        </td>
+                        <td>
+                            <audio controls style="max-width: 250px;"><source src="./src/face/13/ours.wav" type="audio/wav"></audio>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="1">
+                            <img class="img-responsive" src="./src/face/14/ref.jpg" style="max-width: 150px;">
+                        </td>
+                        <td colspan="2" style="font-size: 16px; max-width: 500px;">
+                            SHE WANTED TO CHANGE POLICY AT THE GOVERNMENT LEVEL
+                        </td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td style="border-bottom: 0px;">Ground Truth</td>
+                        <td style="border-bottom: 0px;">Speech Based</td>
+                        <td style="border-bottom: 0px;">FaceTTS</td>
+                        <td style="border-bottom: 0px;">Synthesees</td>
+                        <td style="border-bottom: 0px;">Ours</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <audio controls style="max-width: 250px;"><source src="./src/face/14/gt.wav" type="audio/wav"></audio>
+                        </td>
+                        <td>
+                            <audio controls style="max-width: 250px;"><source src="./src/face/14/speech_based.wav" type="audio/wav"></audio>
+                        </td>
+                        <td>
+                            <audio controls style="max-width: 250px;"><source src="./src/face/14/facetts.wav" type="audio/wav"></audio>
+                        </td>
+                        <td>
+                            <audio controls style="max-width: 250px;"><source src="./src/face/14/synthesees.wav" type="audio/wav"></audio>
+                        </td>
+                        <td>
+                            <audio controls style="max-width: 250px;"><source src="./src/face/14/ours.wav" type="audio/wav"></audio>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            </div>
+        </div>
+
+        <div class="row" style="height: 100px;" >
+            <div class="col-xs-12" style=" height: 50px; font-size: 30px;">
+                Samples for text prompt based
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-xs-12" style="display: flex; justify-content: center;">
+            <table class="table-responsive" style="font-size: 20px; width: 1250px;">
+                <thead></thead>
+                <tbody>
+                    <tr>
+                        <td colspan="2" style="max-width: 500px; font-size: 15px;">
+                            slightly sincere, feminine, slightly sexy, fast speaking speed, slightly kind, very high pitch, adult-like, calm, normal energy, female, slightly soft
+                        </td>
+                        <td colspan="1" style="max-width: 250px; font-size: 15px;">
+                            <audio controls style="max-width: 250px;"><source src="./src/caption/37/ref.wav" type="audio/wav"></audio>
+                        </td>
+                        <td colspan="2" style="font-size: 16px; max-width: 500px;">
+                            WHY IS IT IMPORTANT NOW
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="border-bottom: 0px;">PromptTTS++</td>
+                        <td style="border-bottom: 0px;"></td>
+                        <td style="border-bottom: 0px;">Ours</td>
+                        <td style="border-bottom: 0px;"></td>
+                        <td style="border-bottom: 0px;"></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <audio controls style="max-width: 250px;"><source src="./src/caption/37/promptttspp.wav" type="audio/wav"></audio>
+                        </td>
+                        <td></td>
+                        <td>
+                            <audio controls style="max-width: 250px;"><source src="./src/caption/37/ours.wav" type="audio/wav"></audio>
+                        </td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" style="max-width: 500px; font-size: 15px;">
+                            masculine, slightly refreshing, normal pitch, adult-like, male, normal energy, slightly kind, calm, normal speaking speed
+                        </td>
+                        <td colspan="1" style="max-width: 250px; font-size: 15px;">
+                            <audio controls style="max-width: 250px;"><source src="./src/caption/33/ref.wav" type="audio/wav"></audio>
+                        </td>
+                        <td colspan="2" style="font-size: 16px; max-width: 500px;">
+                            WE CAN OPEN UP CITY HALL
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="border-bottom: 0px;">PromptTTS++</td>
+                        <td style="border-bottom: 0px;"></td>
+                        <td style="border-bottom: 0px;">Ours</td>
+                        <td style="border-bottom: 0px;"></td>
+                        <td style="border-bottom: 0px;"></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <audio controls style="max-width: 250px;"><source src="./src/caption/33/promptttspp.wav" type="audio/wav"></audio>
+                        </td>
+                        <td></td>
+                        <td>
+                            <audio controls style="max-width: 250px;"><source src="./src/caption/33/ours.wav" type="audio/wav"></audio>
+                        </td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" style="max-width: 500px; font-size: 15px;">
+                            slightly elegant, adult-like, low pitch, slightly intellectual, fast speaking speed, fluent, feminine, female, slightly clear, normal energy
+                        </td>
+                        <td colspan="1" style="max-width: 250px; font-size: 15px;">
+                            <audio controls style="max-width: 250px;"><source src="./src/caption/20/ref.wav" type="audio/wav"></audio>
+                        </td>
+                        <td colspan="2" style="font-size: 16px; max-width: 500px;">
+                            I BECAME A PSYCHOLOGY RESEARCHER AND I'VE DEVOTED MY WORK TO UNDERSTANDING THE HUMAN CAPACITY TO CARE FOR OTHERS
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="border-bottom: 0px;">PromptTTS++</td>
+                        <td style="border-bottom: 0px;"></td>
+                        <td style="border-bottom: 0px;">Ours</td>
+                        <td style="border-bottom: 0px;"></td>
+                        <td style="border-bottom: 0px;"></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <audio controls style="max-width: 250px;"><source src="./src/caption/20/promptttspp.wav" type="audio/wav"></audio>
+                        </td>
+                        <td></td>
+                        <td>
+                            <audio controls style="max-width: 250px;"><source src="./src/caption/20/ours.wav" type="audio/wav"></audio>
+                        </td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" style="max-width: 500px; font-size: 15px;">
+                            slightly intellectual, adult-like, cool, slightly elegant, high pitch, slightly thick, high energy, very masculine, slightly calm, male, very slow speaking speed
+                        </td>
+                        <td colspan="1" style="max-width: 250px; font-size: 15px;">
+                            <audio controls style="max-width: 250px;"><source src="./src/caption/40/ref.wav" type="audio/wav"></audio>
+                        </td>
+                        <td colspan="2" style="font-size: 16px; max-width: 500px;">
+                            AND ALL OF THAT SOUNDS GREAT UNTIL YOU FIGURE OUT WHERE IT'S REALLY GOING
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="border-bottom: 0px;">PromptTTS++</td>
+                        <td style="border-bottom: 0px;"></td>
+                        <td style="border-bottom: 0px;">Ours</td>
+                        <td style="border-bottom: 0px;"></td>
+                        <td style="border-bottom: 0px;"></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <audio controls style="max-width: 250px;"><source src="./src/caption/40/promptttspp.wav" type="audio/wav"></audio>
+                        </td>
+                        <td></td>
+                        <td>
+                            <audio controls style="max-width: 250px;"><source src="./src/caption/40/ours.wav" type="audio/wav"></audio>
+                        </td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" style="max-width: 500px; font-size: 15px;">
+                            long brown hair, long eyelashes, woman, long broad nose, narrow chin, big brown eyes, deep eye sockets, hair covering ears, double eyelids, wavy hair, thin lips, big open mouth, round face, young, brown eyebrows, chubby cheeks, slightly curved eyebrows, high nose bridge, wheat skin, broad forehead
+                        <td colspan="1" style="max-width: 250px; font-size: 15px;">
+                            <img class="img-responsive" src="./src/caption/49/ref.jpg" style="max-width: 150px;">
+                        </td>
+                        <td colspan="2" style="font-size: 16px; max-width: 500px;">
+                            I EXIST BECAUSE I HAVE MY WOMEN FRIENDS
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="border-bottom: 0px;">PromptTTS++</td>
+                        <td style="border-bottom: 0px;"></td>
+                        <td style="border-bottom: 0px;">Ours</td>
+                        <td style="border-bottom: 0px;"></td>
+                        <td style="border-bottom: 0px;"></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <audio controls style="max-width: 250px;"><source src="./src/caption/49/promptttspp.wav" type="audio/wav"></audio>
+                        </td>
+                        <td></td>
+                        <td>
+                            <audio controls style="max-width: 250px;"><source src="./src/caption/49/ours.wav" type="audio/wav"></audio>
+                        </td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" style="max-width: 500px; font-size: 15px;">
+                            black eyebrows, deep eye sockets, long, short eyelashes, melon seed face, big mouth, thin, small nose, black hair, narrow chin, fair skin, double eyelids, short narrow nose, thin cheeks, broad forehead, wavy hair, thin lips, closed, big brown eyes, straight black eyebrows
+                        <td colspan="1" style="max-width: 250px; font-size: 15px;">
+                            <img class="img-responsive" src="./src/caption/52/ref.jpg" style="max-width: 150px;">
+                        </td>
+                        <td colspan="2" style="font-size: 16px; max-width: 500px;">
+                            NOW MY OWN SPECIALITY IS COMBINING DIGITAL TECHNOLOGY AND MAGIC
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="border-bottom: 0px;">PromptTTS++</td>
+                        <td style="border-bottom: 0px;"></td>
+                        <td style="border-bottom: 0px;">Ours</td>
+                        <td style="border-bottom: 0px;"></td>
+                        <td style="border-bottom: 0px;"></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <audio controls style="max-width: 250px;"><source src="./src/caption/52/promptttspp.wav" type="audio/wav"></audio>
+                        </td>
+                        <td></td>
+                        <td>
+                            <audio controls style="max-width: 250px;"><source src="./src/caption/52/ours.wav" type="audio/wav"></audio>
+                        </td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+            </div>
+        </div>
+
+        <div class="clearfix visible-xs"></div>
+
+    </div>
+
+   </body>
+</html>
